@@ -1,0 +1,1 @@
+SCSS Precompile: sass .\src\scss\base.scss .\src\css\css.css

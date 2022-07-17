@@ -10,10 +10,4 @@ app.listen(port, () => {
     console.log(`Now listening on port ${port}`); 
 });
 
-app.get('/src/js/textModifier.js', function (req, res) {
-    res.sendFile(__dirname + '/src/js/textModifier.js');
-});
-
-app.get('/src/js/textRenderer.js', function (req, res) {
-    res.sendFile(__dirname + '/src/js/textRenderer.js');
-});
+app.use(express.static(__dirname + '/public'));
