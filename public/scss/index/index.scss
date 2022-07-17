@@ -1,16 +1,24 @@
 .output
 {
-    display: block;
+    margin: 20px;
+    padding: 20px;
+    display: inline-flex;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: -webkit-fill-available;
 
-    .generated
+    .generated, .rendered
     {
         padding: 0 20px 0 20px;
-        background-color: beige;
-    }
+        width: 50%;
+        
+        label
+        {
+            align-items: center;
+        }
 
-    .rendered
-    {
-        padding: 0 20px 0 20px;
-        background-color:cadetblue;
+        p {
+            display: flex;    
+        }
     }
 }

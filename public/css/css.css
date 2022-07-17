@@ -1,13 +1,20 @@
 .output {
-  display: block;
+  margin: 20px;
+  padding: 20px;
+  display: inline-flex;
+  border: 2px solid black;
+  border-radius: 5px;
+  width: -webkit-fill-available;
 }
-.output .generated {
+.output .generated, .output .rendered {
   padding: 0 20px 0 20px;
-  background-color: beige;
+  width: 50%;
 }
-.output .rendered {
-  padding: 0 20px 0 20px;
-  background-color: cadetblue;
+.output .generated label, .output .rendered label {
+  align-items: center;
+}
+.output .generated p, .output .rendered p {
+  display: flex;
 }
 
 .form {
