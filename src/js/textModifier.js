@@ -1,17 +1,16 @@
 $('#form').submit(function (evt) {
     evt.preventDefault();
     
-    var output = $('#output')
-    clearOutput(output);
+    var element = $('#generateOutput')
+    element.empty();
+    element.append(generateModifiedText());
+});
 
+function generateModifiedText()
+{
     var text = $('#text').val();
     var repeats = $('#repeats').val();
 
-    output.append(generateModifiedText(text, repeats));
-});
-
-function generateModifiedText(text, repeats)
-{
     var modifiedText = '';
 
     for(var i = 0; i < repeats; ++i)
@@ -24,10 +23,7 @@ function generateModifiedText(text, repeats)
 
 function generateCarretArray(size)
 {
-    return Array(size).fill('^').join('');
-}
-
-function clearOutput(elm)
-{
-    elm.empty();
+    return Array(size)
+        .fill('^')
+        .join('');
 }

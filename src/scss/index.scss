@@ -1,0 +1,22 @@
+.output
+{
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    .generated
+    {
+        width: 100%;
+        height: 100%;
+        padding: 0 20px 0 20px;
+        background-color: beige;
+    }
+
+    .rendered
+    {
+        width: 100%;
+        height: 100%;
+        padding: 0 20px 0 20px;
+        background-color:cadetblue;
+    }
+}

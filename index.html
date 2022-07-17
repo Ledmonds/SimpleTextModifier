@@ -4,11 +4,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <script defer src="/src/js/modify.js"></script>
+        <script defer src="/src/js/textModifier.js"></script>
+        <script defer src="/src/js/textRenderer.js"></script>
         <title>Simple Text Modifier</title>
     </head>
     <body>
-        <div>Enter Some Text</div>
+        <div>Modify Your Text</div>
         <div>
             <form id="form">
                 <label>Input Text</label>
@@ -17,11 +18,22 @@
                 <label>Repeats</label>
                 <input id="repeats" required value=7 type="number" />
 
+                <label>Start Size</label>
+                <input id="startSize" required value="16" type="number" />
+
                 <input type="submit" value="Modify Me">
             </form>
         </div>
+        
+        <div class="output">
+            <div class="generated">
+                <p id="generateOutput"></p>
+            </div>
+            <div class="rendered">
+                <p style="display:flex;" id="renderOutput"></p>
+            </div>
+        </div>
 
-        <p id="output"></p>
     </body>
 </html>
 
